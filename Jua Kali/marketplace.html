@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html
+    style="height: 100%; width: 100%;      background-color: rgb(249, 213, 169) ;background-image: url(https://nintendosoup.com/wp-content/uploads/2017/08/ace_attorney_plushies_small_19cm_pic_1.png);">
+
+<head>
+    <title>Juakali/Login</title>
+    <meta name="viewport" content="width=device-     width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            padding: 10px;
+            background-color: rgb(249, 213, 169)
+        }
+
+        .topnav a {
+            float: left;
+            color: rgb(87, 8, 8);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: rgb(250, 200, 139);
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: rgb(250, 200, 139)
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(238, 165, 77);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        #logo {
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+            height: 70px;
+            width: 70px;
+        }
+
+        #Footer {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(249, 213, 169);
+            width: 100%;
+            height: 200px;
+        }
+
+        #topfooter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(248, 197, 134);
+            width: 100%;
+            height: 100%;
+        }
+
+        #socials {
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+            margin-top: 20px;
+        }
+
+        #pfp {
+            display: flex;
+            flex-direction: row;
+            height: 70px;
+            width: 70px;
+            margin-left: 700px;
+            border-radius: 40px;
+            align-items: center;
+            padding: 5px;
+        }
+
+        #mainbody {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 900px;
+            background-color: rgb(247, 200, 142);
+        }
+
+        #menue {
+            display: flex;
+            flex-direction: row;
+            height: 840px;
+            width: 5%;
+        }
+
+        #Bigimg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            height: 60%;
+            border-radius: 30px;
+            margin-top: 50px;
+            background-image: url("https://amazingfoodanddrink.com/wp-content/uploads/2024/05/Exploring-Traditional-Markets-in-Morocco_-258521511.jpg");
+        }
+
+        #mktplacesection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 95%;
+            background-color: rgb(247, 200, 142);
+            gap: 30px;
+        }
+
+        #mrkinfo {
+            display: flex;
+            flex-direction: row;
+            width: 1230px;
+            height: 300px;
+            gap: 300px;
+        }
+
+        .infocards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            border-radius: 50px;
+            background-color: rgb(70, 187, 134);
+        }
+    </style>
+
+</head>
+
+<div class="topnav">
+    <div id="logo">
+        <img src="./images/logo1.png" style="width:70px;height:70px;">
+    </div>
+    <a href="home.html" target="_self">Home</a>
+    <a href="services.html" target="_self">Services</a>
+    <a href="contact.html" target="_self">Contact</a>
+    <a href="about.html" target="_self">About</a>
+    <a class="active" href="marketplace.html" target="_self">Marketplace</a>
+
+    <div id="pfp">
+        <a href="profile.html" target="_self"> <img src="images/dino.png" style="height: 70px; width: 70px;">NATE</a>
+    </div>
+
+
+</div>
+
+<div id="mainbody">
+
+    <div id="mySidenav" class="sidenav">
+        <div class="imgcontainer">
+            <img src="images/marketplace.png" style="height: 200px;width: 200px;">
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="marketplace.html">Market</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="board.html">Board</a>
+        <a href="chat.html">Chat</a>
+
+    </div>
+
+    <div id="menue"><span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <div id="mktplacesection">
+        <div id="Bigimg">
+            <h1 style="color: white;margin-top: 150px;">GET IN TOUCH WITH CLIENTS TODAY</h1>
+            <input type="text" placeholder="     Search for a Client/Category....."
+                style="height: 50px; width: 600px; margin-top: 60px; border-radius: 30px;">
+        </div>
+        <section style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+            <h2>WHAT WE THRIVE FOR</h2>
+            <div id="mrkinfo">
+                <div class="infocards">
+                    <img src="https://icons.veryicon.com/png/o/miscellaneous/zr_icon/timely-communication.png"
+                        style="height: 150px;width: 150px;">
+                    <h3>COMMUNICATE</h3>
+                </div>
+                <div class="infocards">
+                    <img src="https://cdn-icons-png.flaticon.com/512/826/826048.png"
+                        style="height: 150px;width: 150px;">
+                    <h3>COLABORATE</h3>
+                </div>
+                <div class="infocards">
+                    <img src="https://static.thenounproject.com/png/986425-200.png" style="height: 150px;width: 150px;">
+                    <h3>PERTICIPATE</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+<section>
+    <div id="Footer">
+        <div id="topfooter">
+            <img src="images/logo3.png" style="width:100px;height:100px;">
+            <div id="socials">
+                <a href="https://www.google.com/search?q=ig&sca_esv=6449538529ffda2f&rlz=1C5CHFA_enKE1093KE1094&udm=2&biw=1440&bih=812&ei=SBcBZ5j_Mb2G9u8PpI-ssAs&ved=0ahUKEwiYw6ushveIAxU9g_0HHaQHC7YQ4dUDCBA&uact=5&oq=ig&gs_lp=Egxnd3Mtd2l6LXNlcnAiAmlnMgoQABiABBhDGIoFMhAQABiABBixAxhDGIMBGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMggQABiABBixAzILEAAYgAQYsQMYgwFIlwVQAFisA3AAeACQAQCYAYcCoAGHAqoBAzItMbgBA8gBAPgBAZgCAaACkwKYAwCSBwMyLTGgB7wF&sclient=gws-wiz-serp#vhid=vDxmQJXFChdErM&vssid=mosaic"
+                    target="_blank"><img src="images/instagram.png" style="height: 30px;width: 30px;"></a>
+                <a href="https://www.google.com/search?q=twitter&sa=X&sca_esv=6449538529ffda2f&rlz=1C5CHFA_enKE1093KE1094&biw=1440&bih=812&udm=2&fbs=AEQNm0AbGf0PdIf3AgPCbPKuvq3LsKshsZAx84Zxp11idRJxGfP-6NEi7rHAWuISAhkPt6M3_Xrj0YdsWvdt-fLnMenxDo4m0GYvuETptYZckM3ChjJe1yOR5O_BEpp6PDaeHUxO8G7Nqn5ePC4Etvd5hT5hX_pyH1cOKyNXsCcKeaavD1uxU_0&ved=2ahUKEwjOgcf4hveIAxXN9rsIHTicJDUQtKgLegQIBhAH"
+                    target="_blank"><img src="images/twitter.png" style="height: 30px;width: 30px;"></a>
+                <a href="https://www.google.com/search?q=linked+in&sca_esv=6449538529ffda2f&rlz=1C5CHFA_enKE1093KE1094&biw=1440&bih=812&udm=2&ei=6hcBZ7PREbG69u8P15HzkAw&ved=0ahUKEwiz7qr5hveIAxUxnf0HHdfIHMIQ4dUDCBA&oq=linked+in&gs_lp=Egxnd3Mtd2l6LXNlcnAiCWxpbmtlZCBpbkiyJFAAWNYMcAB4AJABA5gBAKABAKoBALgBDMgBAPgBAZgCAKACAJgDAJIHAKAHAA&sclient=gws-wiz-serp"
+                    target="_blank"><img src="images/linkedin.png" style="height: 30px;width: 30px;"></a>
+                <a href="https://www.google.com/search?q=you+tube&sca_esv=6449538529ffda2f&rlz=1C5CHFA_enKE1093KE1094&biw=1440&bih=812&udm=2&ei=AxgBZ4zhKeuI9u8P4Nzd2AU&ved=0ahUKEwjM7riFh_eIAxVrhP0HHWBuF1sQ4dUDCBA&uact=5&oq=you+tube&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHlvdSB0dWJlMgoQABiABBixAxgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKSO0cUABYzBtwA3gAkAEAmAHuAaAB7BCqAQUwLjIuOLgBA8gBAPgBAZgCDaACsxHCAhAQABiABBixAxhDGIMBGIoFwgIKEAAYgAQYQxiKBcICCxAAGIAEGLEDGIMBwgIFEAAYgATCAggQABiABBixA8ICDRAAGIAEGLEDGIMBGArCAg8QABiABBixAxhDGIoFGArCAgQQABgDmAMA4gMFEgExIECSBwUzLjEuOaAH_Dc&sclient=gws-wiz-serp"
+                    target="_blank"><img src="images/youtube.png" style="height: 30px;width: 30px;"></a>
+
+            </div>
+            <h4>@nathanmwangi.ml@gmail.com</h4>
+        </div>
+</section>
+</body>
+
+</html>

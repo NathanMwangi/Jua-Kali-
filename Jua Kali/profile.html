@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;  background-color:rgb(247, 200, 142);">
+
+<head>
+    <title>Juakali/Login</title>
+    <meta name="viewport" content="width=device-     width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            padding: 10px;
+            background-color: rgb(249, 213, 169)
+        }
+
+        .topnav a {
+            float: left;
+            color: rgb(87, 8, 8);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: rgb(250, 200, 139);
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: rgb(250, 200, 139)
+        }
+
+        #logo {
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+            height: 70px;
+            width: 70px;
+        }
+
+        #loginhere {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 700px;
+            height: 600px;
+            background-color: rgb(238, 165, 77);
+            border-radius: 20px;
+            margin-bottom: 150px;
+        }
+
+        #logincontainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        #Footer {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(249, 213, 169);
+            width: 100%;
+            height: 200px;
+        }
+
+        #topfooter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(248, 197, 134);
+            width: 100%;
+            height: 100%;
+        }
+
+        #socials {
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+            margin-top: 20px;
+        }
+
+
+        #profilesection {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 700px;
+            width: 100%;
+        }
+
+        #aboutyou {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 500px;
+
+        }
+
+        #profilesettings {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 700px;
+            background-color: rgb(70, 187, 134);
+        }
+
+        #profileinfo {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            height: 60%;
+            width: 100%;
+            padding-left: 50px;
+        }
+
+        #follwers {
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            width: 300px;
+            gap: 60px;
+        }
+
+        #profilebg {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(70, 187, 134);
+            height: 100%;
+            width: 2000px;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+
+        #mainbody {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            width: 1352px;
+            padding: 40px;
+        }
+
+        #posts {
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 450px;
+            margin-top: 10px;
+            gap: 10px;
+            border: 2px solid black;
+        }
+
+        .postrows {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            width: 100%;
+            height: 500px;
+        }
+
+        #pfp {
+            display: flex;
+            flex-direction: row;
+            height: 70px;
+            width: 70px;
+            margin-left: 700px;
+            border-radius: 40px;
+            align-items: center;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+
+<div class="topnav">
+    <div id="logo">
+        <img src="./images/logo1.png" style="width:70px;height:70px;">
+    </div>
+    <a href="home.html" target="_self">Home</a>
+    <a href="services.html" target="_self">Services</a>
+    <a href="contact.html" target="_self">Contact</a>
+    <a href="about.html" target="_self">About</a>
+    <a href="marketplace.html" target="_self">Marketplace</a>
+    <div id="pfp">
+        <a href="profile.html" target="_self"> <img src="images/dino.png" style="height: 80px; width: 80px;">NATE</a>
+    </div>
+
+
+
+</div>
+
+
+
+<section id="mainbody">
+
+    <div id="profilesection">
+
+        <div id="profilebg">
+
+            <div id="aboutyou">
+                <a href="profile.html" target="_self"> <img src="images/dino.png"
+                        style="height: 300px; width: 300px;"></a>
+
+                <div id="profileinfo">
+                    <h2>NATE</h2>
+                    <h4 style="font-style: italic;">Nathan Muchina</h4>
+                    <div id="follwers">
+                        <h4> Followers:<em> over 9000</em></h4>
+                        <h4>Posts:<em> 21</em></h4>
+                    </div>
+                    <p> Start up software dev :) </p>
+                    <button type="submit" style="height: 50px; width: 400px;background-color: rgb(70, 187, 134);">Edit
+                        Profile</button>
+                </div>
+            </div>
+
+            <hr style="border-color: black;">
+
+            <div id="profilesettings">
+                <h4>Hi there....<h4>
+                        <h4>I am a.....<h4>
+                                <button style="height: 60px; width: 200px;background-color: rgb(55, 157, 111);"><a
+                                        href="https://www.google.com/search?q=software+developer&rlz=1C5CHFA_enKE1093KE1094&oq=s&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOzIGCAMQRRg7MgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQc3ODlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+                                        style="color: black;" target="_blank">SOFTWARE DEVELOPER</a></button>
+
+                                <div id="posts">
+                                    <div class="postrows" id="post1">
+
+                                    </div>
+                                    <div class="postrows" id="post2">
+
+                                    </div>
+
+                                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+</div>
+<section>
+    <div id="Footer">
+        <div id="topfooter">
+            <img src="images/logo3.png" style="width:100px;height:100px;">
+            <div id="socials">
+                <a href="https://www.google.com/search?q=ig&sca_esv=6449538529ffda2f&rlz=1C5CHFA_enKE1093KE1094&udm=2&biw=1440&bih=812&ei=SBcBZ5j_Mb2G9u8PpI-ssAs&ved=0ahUKEwiYw6ushveIAxU9g_0HHaQHC7YQ4dUDCBA&uact=5&oq=ig&gs_lp=Egxnd3Mtd2l6LXNlcnAiAmlnMgoQABiABBhDGIoFMhAQABiABBixAxhDGIMBGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMggQABiABBixAzILEAAYgAQYsQMYgwFIlwVQAFisA3AAeACQAQCYAYcCoAGHAqoBAzItMbgBA8gBAPgBAZgCAaACkwKYAwCSBwMyLTGgB7wF&sclient=gws-wiz-serp#vhid=vDxmQJXFChdErM&vssid=mosaic"
+                    target="_blank"><img src="images/instagram.png" style="height: 30px;width: 30px;"></a>
+                <a href="https://www.google.com/search?q=twitter&sa=X&sca_esv=6449538529ffda2f&rlz=1C5CHFA_enKE1093KE1094&biw=1440&bih=812&udm=2&fbs=AEQNm0AbGf0PdIf3AgPCbPKuvq3LsKshsZAx84Zxp11idRJxGfP-6NEi7rHAWuISAhkPt6M3_Xrj0YdsWvdt-fLnMenxDo4m0GYvuETptYZckM3ChjJe1yOR5O_BEpp6PDaeHUxO8G7Nqn5ePC4Etvd5hT5hX_pyH1cOKyNXsCcKeaavD1uxU_0&ved=2ahUKEwjOgcf4hveIAxXN9rsIHTicJDUQtKgLegQIBhAH"
+                    target="_blank"><img src="images/twitter.png" style="height: 30px;width: 30px;"></a>
+                <a href="https://www.google.com/search?q=linked+in&sca_esv=6449538529ffda2f&rlz=1C5CHFA_enKE1093KE1094&biw=1440&bih=812&udm=2&ei=6hcBZ7PREbG69u8P15HzkAw&ved=0ahUKEwiz7qr5hveIAxUxnf0HHdfIHMIQ4dUDCBA&oq=linked+in&gs_lp=Egxnd3Mtd2l6LXNlcnAiCWxpbmtlZCBpbkiyJFAAWNYMcAB4AJABA5gBAKABAKoBALgBDMgBAPgBAZgCAKACAJgDAJIHAKAHAA&sclient=gws-wiz-serp"
+                    target="_blank"><img src="images/linkedin.png" style="height: 30px;width: 30px;"></a>
+                <a href="https://www.google.com/search?q=you+tube&sca_esv=6449538529ffda2f&rlz=1C5CHFA_enKE1093KE1094&biw=1440&bih=812&udm=2&ei=AxgBZ4zhKeuI9u8P4Nzd2AU&ved=0ahUKEwjM7riFh_eIAxVrhP0HHWBuF1sQ4dUDCBA&uact=5&oq=you+tube&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHlvdSB0dWJlMgoQABiABBixAxgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKSO0cUABYzBtwA3gAkAEAmAHuAaAB7BCqAQUwLjIuOLgBA8gBAPgBAZgCDaACsxHCAhAQABiABBixAxhDGIMBGIoFwgIKEAAYgAQYQxiKBcICCxAAGIAEGLEDGIMBwgIFEAAYgATCAggQABiABBixA8ICDRAAGIAEGLEDGIMBGArCAg8QABiABBixAxhDGIoFGArCAgQQABgDmAMA4gMFEgExIECSBwUzLjEuOaAH_Dc&sclient=gws-wiz-serp"
+                    target="_blank"><img src="images/youtube.png" style="height: 30px;width: 30px;"></a>
+
+            </div>
+            <h4>@nathanmwangi.ml@gmail.com</h4>
+        </div>
+</section>
+</body>
+
+</html>
